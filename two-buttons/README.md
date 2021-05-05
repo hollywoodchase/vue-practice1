@@ -1,4 +1,4 @@
-# vue-practice1
+# two-buttons
 
 ## Project setup
 ```
