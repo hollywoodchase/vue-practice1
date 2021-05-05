@@ -23,6 +23,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   border: 2px solid silver;
+  background: black;
   /* display: flex;
   flex-direction: column; */
   /* margin-top: 60px; */

@@ -9,14 +9,13 @@
       <b-row>
         <b-col>
           <div class="button-div">
-            <button @click="change">Change</button>
-            <b-button @click="change" class="b-button" pill variant="outline-success">Button</b-button>
+            <b-button @click="change1" class="b-button" pill variant="outline-success">Button</b-button>
           </div>
           
         </b-col>
         <b-col>
           <div class="button-div">
-            <b-button @click="change" class="b-button" pill variant="outline-danger">
+            <b-button @click="change2" class="b-button" pill variant="outline-danger">
               Button
             </b-button>
           </div>
@@ -36,7 +35,7 @@ export default {
     msg: String,
   },
   methods: {
-    change: function () {
+    change1: function () {
       let colors = ["primary", "secondary", "success", "warning", "danger", "info", "dark", "outline-primary", "outline-secondary", "outline-success", "outline-warning", "outline-danger", "outline-info", "outline-dark"]
 
       let colorNum = Math.floor(Math.random() * colors.length);
@@ -45,6 +44,18 @@ export default {
 
       console.log(colorNum);
       console.log("hello");
+      alert("You pressed Green!");
+    },
+    change2: function () {
+      let colors = ["primary", "secondary", "success", "warning", "danger", "info", "dark", "outline-primary", "outline-secondary", "outline-success", "outline-warning", "outline-danger", "outline-info", "outline-dark"]
+
+      let colorNum = Math.floor(Math.random() * colors.length);
+
+
+
+      console.log(colorNum);
+      console.log("hello");
+      alert("You pressed Red!");
     }
   }
 };
@@ -54,12 +65,13 @@ export default {
 <style scoped>
 .directions-box {
     padding: 50px;
+    color: white;
 }
 .directions {
     font-family: 'Marck Script', cursive;
 }
 .button-div {
-  border: 2px solid gold;
+  /* border: 2px solid gold; */
   height: 50vh;
   display: flex;
   align-items: center;
@@ -72,12 +84,12 @@ export default {
 .buttons {
   height: 100vh;
   width: 100vw;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .buttons-container {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 </style>
